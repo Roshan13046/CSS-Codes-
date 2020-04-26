@@ -1,0 +1,58 @@
+*{
+    box-sizing:border-box;
+}
+
+/*Style the container*/
+.container{
+    background-color:#07575B;
+    height:400px;
+    margin:10px;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction:row;
+/*    Styling for align items in flex box*/
+/*    justify-content: center;*/
+   align-items:stretch;
+    align-content: center;
+    
+}
+
+/*style divs inside the container*/
+.container > div{
+    background-color: #66a5AD;
+    color:aliceblue;
+    text-align:center;
+    padding:20px;
+    margin:1px;
+    border: 3px #C4DFE6 solid;    
+/*    Flex Resize Items using flex-grow and flex-basis */        
+/*
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
+*/
+/*
+    Flex-basis:150px means while shrinking the items tab the items will come to next row or column only if it reaches 150px and it starts growing from that basis pixels or %; 
+    
+*/
+    
+/*    Short Hand stmt for flex */
+/* format : grow shrink basis */
+    flex:1 1 150px;
+/*    flexgrow is 1*/
+    flex:1;
+/*    Flex basis is 30%*/
+    flex:30%;
+/*flex grow is 1 and shrink is 0    */
+    flex:1 0;
+/*    flex grow is 1 shrink is 3 and basis is 20%*/
+    
+   flex:1 3 20%; 
+    
+/*  flex grow is 1 and flex basis is 40%  */
+    flex:1 40%;
+}
+#facebook{
+/*    flex-grow: 4;
+}
+

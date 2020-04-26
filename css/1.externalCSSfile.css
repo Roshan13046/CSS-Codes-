@@ -1,0 +1,15 @@
+        p{
+                color:aqua;
+                font-family: fantasy;
+                font-size: 300%;
+            }    
+        h1{
+                color:fuchsia;
+                font-family: cursive;
+                font-size: 400%;
+            }
+        pre{
+                color: darkviolet;
+                font-family: inherit;
+                font-size: 500%;
+            }
