@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BoxModel:Margin</title>
+        
+        
+        <!-- top/bottom = 13px  and  right/left = 12px -->
+        <!-- padding: top = 12px , right=13px ,bottom = 14px , left = 15px -->
+        <!-- padding : top/right/bottom/left = 12px -->
+        
+        
+        <!-- border:top/right/bootom/left=12px ,
+        color=black ,style=ridge  Note: Style is very imp until ad unless you give any style it will not show border in Webpage-->
+        
+        <!-- outlines are not counted into the dimensions of the box -->
+        
+        <style>
+            .FaceBook{
+                background-color:#4267B2;
+                color: white;
+                height: auto;
+                width:auto;
+                
+                padding:13px 12px ;
+                
+                border: 12px black ridge;         
+                
+                outline-style: solid;
+                outline-color: chartreuse;
+                outline-width: thick;
+                
+                margin:20px 40px 60px 80px; 
+            }                                    
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:100px;
+                width:100px;
+                
+                padding: 12px 13px 14px 15px;
+                
+                border-width:10px 20px 30px 40px;
+                border-color:firebrick deeppink olivedrab yellow;
+                border-style:groove;       
+                border-radius: 1200px;
+                
+                margin:100px;
+            }            
+            .WhatsApp{
+                background-color:#00E676;
+                color:#FFFFFF;
+                height:auto;
+                width:auto;
+                
+                padding: 12px ;
+                
+                border-top-width: 11;
+                border-right-width: 22;
+                border-bottom-width: 33;
+                border-left-width: 44;
+                
+                border-top-color: darkviolet;
+                border-right-color:deeppink;
+                border-bottom-color:chartreuse;
+                border-left-color:darkorange;
+                
+                border-top-style: dashed;
+                border-right-style:dotted;
+                border-bottom-style:double;
+                border-left-style:groove;
+                
+                margin:100px;
+            }            
+        </style>
+    </head>
+    
+    <body>
+        <div class="FaceBook">
+        <p>Facebook</p>
+        </div>
+        
+        <div class="Twitter">
+        <p>Twitter</p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>        
+    </body>      
+</html>
