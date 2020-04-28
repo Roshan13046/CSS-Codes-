@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Positioning</title>
+        <!--
+        Positionng:We are setting the position of the elements and they will behave during the flow of the webpage. 
+        4 types;
+        1)static:all elements are bydefault static means they all are behaving according to the normal horizontal flow of the webpage.
+        2)Fixed means all the other elements are ignoring that fixed element in the flow of the webpage.
+        3)Relative:It means the element is positioned relative to its previous position.
+        4)Absolute:It means positioning of the element relative to the first parent that is non static and if there is no such parent then we are positioning the element relative to the html elements.
+        
+        Note:If no other element is positioned then the only positioned element will be shown at top.
+
+
+        Z-index: the element with greater Z index will be at top .
+        Note:If no other element has the z-index then the element with the z-index will be at the top.
+        
+        -->
+        <style>
+            .FaceBook{
+                background-color:#4267B2;
+                color: white;
+                height: 100px;
+                width:auto;
+                
+                position: fixed;
+                top: 30px;
+                left:40px;
+                
+                z-index: 3;
+            }
+            
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:100px;
+                width:auto;
+                
+                position: relative;
+                top:60px;
+                left:20px;
+                
+                z-index: 5;
+            }
+            .WhatsApp{
+                background-color:#00E676;
+                color:#FFFFFF;
+                height:100px;
+                width:auto;
+                
+                position: absolute;
+                top:60px;
+                left:50px;
+                
+                z-index: 1;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+
+        <div class="FaceBook">
+        <p>Facebook</p>
+        </div>
+        
+        <div class="Twitter">
+        <p>Twitter</p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>
+        
+        <!-- spans are the inline elements which are used to group the inline elemnts and style the groped elements using CSS -->
+        
+    </body>      
+
+</html>

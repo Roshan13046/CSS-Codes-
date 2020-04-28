@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Visibility</title>
+        
+        <!-- visibility hidden means the element is hidden but ocuupies its space -->
+        <!--  display none means no eleemnt and no space is seen. -->
+        <!-- display : block means it will display the span element separately --> 
+        
+        
+        <style>
+            .FaceBook{
+                background-color:#4267B2;
+                color: white;
+                height: 100px;
+                width:auto;
+                
+        /*      visibility: hidden; */ 
+                display:none;           
+                
+            }
+            
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+            .WhatsApp{
+                background-color:#00E676;
+                color:#FFFFFF;
+                height:100px;
+                width:auto;
+                
+            }
+            .Gods{
+                background-color: aqua;       
+                font-style: normal;
+                font-size: 20px;
+                
+               display: block; 
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <div class="FaceBook">
+        <p>Facebook</p>
+        </div>
+        
+        <div class="Twitter">
+        <p>Twitter</p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>
+        
+        <p>Mom And Dad Are Next to<span class="Gods">Godess and God</span> </p>
+    </body>      
+
+</html>

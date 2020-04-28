@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Div and Spans</title>
+        <style>
+            .FaceBook{
+                background-color:#4267B2;
+                color: white;
+                height: 100px;
+                width:600px;
+                
+                overflow: hidden;/*No overflow of text*/
+                white-space: nowrap;/*No further repeating of the text in downlines
+                */
+                text-overflow: ellipsis;
+                /* dotted lines after text means infinite lines going on*/
+            }
+            
+            .FaceBook:hover{
+                overflow: visible;
+            }
+            
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:100px;
+                width:400px;
+                
+                
+/*                word-break: break-all;*/
+/*                word-break: keep-all;*/
+/*                overflow: hidden;*/
+                word-wrap: break-word;
+            }
+            
+            .WhatsApp{
+                background-color:#00E676;
+                color:#FFFFFF;
+                height:100px;
+                width:auto;
+            }
+            .Gods{
+                background-color: aqua;        
+                font-style: normal;
+                font-size: 20px;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <h1>Div and Spans</h1>
+        <p>Divisons are used to style the block elements.</p>
+        <div class="FaceBook">       Facebook Facebook  FacebookFacebook Facebook    Facebook Facebook FkFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebookFacebook facebook
+            Facebook facebook
+            Facebook facebook
+            Facebook facebookFacebook facebookFacebook facebook
+        </div>
+        
+        <div class="Twitter">
+        <p> Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooog apple  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  Twitter  </p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>
+    </body>      
+
+</html>
