@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>StylingLists</title>
+        <style>
+/*            Note:to use ul before class name*/
+            
+            ul.Members1{
+/*                list-style: square;*/
+/*                list-style: lower-roman;*/
+/*                list-style:upper-roman;*/
+                list-style-image: url(img/Birthday.jpg);
+            }
+            ul.Members2{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            ul.Members2 li{
+                background-image:url(img/gameStall.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                padding-left:30px;                
+            }                    
+        </style>
+    </head>
+    
+    <body>
+        <p>List of Members</p>
+        
+        <ul class="Members1">
+        <li>hjhgvgchvc</li>
+        <li>hdcgvg</li>
+        <li>dbjhcdj</li>    
+        </ul>
+        
+        
+        <ul class="Members2">
+        <li>hjhgvgchvc</li>
+        <li>hdcgvg</li>
+        <li>dbjhcdj</li>    
+        </ul>
+        
+        
+    </body>      
+
+</html>
