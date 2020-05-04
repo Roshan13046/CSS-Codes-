@@ -1,0 +1,145 @@
+<!--
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Transitions</title>
+        <style>
+            .FaceBook{
+                background-color:#4267B2;
+                color: white;
+                height: 100px;
+                width:100px;
+                transition: width 5s;
+            }
+            .FaceBook:hover{
+                width: 300px;
+            }
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+            .WhatsApp{
+                background-color:#00E676;
+                color:#FFFFFF;
+                height:100px;
+                width:auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="FaceBook">
+        <p>Facebook</p>
+        </div>
+        
+        <div class="Twitter">
+        <p>Twitter</p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>
+    </body>      
+
+</html>-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gradients</title>
+        <style>
+            .FaceBook{
+/*                background-color:#4267B2;*/
+/*                color: white;*/
+                height: 100px;
+                width:auto;
+/*     Gradient requires at least 2 colors   */
+                background:linear-gradient(red,yellow ,green);
+                
+              
+/*Note some browsers needs different syntax eg:safari,mozilla,opera  */
+                
+/*  for Safari duplicate the line with change::  -webkit- */
+     background:linear-gradient(red,yellow ,green);
+     background:-webkit-linear-gradient(red,yellow ,green);    
+/*for Opera change is :: -o- */
+   background:-o-linear-gradient(red,yellow);         /*for Mozilla change is :: -moz- */
+ background:-moz-linear-gradient(yellow ,blue,red);                   
+            }            
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:200px;
+                width:200px;    
+/*  Using radial gradient */
+                background: radial-gradient(orange,white,blue,green);                
+                background: radial-gradient(circle,orange,white,blue,green);
+                
+                
+/*   transition seconds*/
+                transition: width 2s;
+            }
+            .Twitter:hover{
+                width: 300px;
+             
+                transform: rotateX(-30deg);
+                transform: rotateY(30deg);
+                transform: translate(30,40);
+            }
+            
+            
+            .WhatsApp{
+/*                background-color:#00E676;*/
+/*                color:#FFFFFF;*/
+                height:100px;                
+                width:100px;
+                
+                /*By default effect strats from top to bottom but you can change it */
+                background:linear-gradient(to left,red,yellow ,green);
+                
+/*  Can rotate by any degrees in anticlockwise direction*/
+                background:linear-gradient(90deg,red,yellow ,green,pink);
+                
+                background:linear-gradient(to bottom left,blue,yellow,orange ,green); 
+                
+                height: 100px;
+                width:100px;
+                transition: width 1s,height 1s,transform 1s;
+            }           
+            .WhatsApp:hover{
+                width:300px;
+                height: 300px;
+                transform: rotateX(180deg);
+            }
+        </style>
+    </head>
+    
+    <body>
+<!--        Gradients: are color transitions using various shades of colr to give some professional looks to our website-->
+       
+        
+<!-- Remember the cross browser compatibility for varius diff Browsers for gradients styling -->
+        <div class="FaceBook">
+        <p>Burning Fire Blood</p>
+        </div>
+        
+        <div class="Twitter">
+        <p>Twitter</p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>
+       
+    </body>      
+
+</html>

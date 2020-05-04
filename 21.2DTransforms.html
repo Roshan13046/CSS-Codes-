@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2D Transform</title>
+        <style>
+            .FaceBook{
+                background-color:#4267B2;
+                color: white;
+                height: 50px;
+                width:50px;
+/*-60 for anticlockwise
+60 for clockwise direction                
+                */
+/*                transform: rotate(-60deg);*/
+                
+/*some browser needs
+internet Explorer needs:
+                -ms-transform: rotate(30deg);         
+                -webkit-transform: rotate(30deg);
+                */          
+                
+/*                left(-20)/right(20) horizontal
+                -40 top and +40px for bottom
+                */
+/*                transform: translate(-20px,20px);*/
+                
+/*                scale(width,height);
+                actual is 1,1
+                less than 1 then it's small and
+                more than one it's large.            */
+                transform:scale(1,1);
+                transform: scale(0.2,0.4);
+                transform: scale(1.3,1.8);
+                
+                transform: skewX(15deg);
+                transform: skewY(45deg);
+                
+            }
+            
+            .Twitter{
+                background-color:#1DA1F2;
+                color:white;
+                height:100px;
+                width:auto;
+            }
+            .WhatsApp{
+                background-color:#00E676;
+                color:#FFFFFF;
+                height:100px;
+                width:auto;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+       
+        <div class="FaceBook">
+        <p>Facebook</p>
+        </div>
+        
+        <div class="Twitter">
+        <p>Twitter</p>
+        </div>
+        
+        <div class="WhatsApp">
+        <p>WhatsApp</p>
+        </div>
+        
+        <!-- spans are the inline elements which are used to group the inline elemnts and style the groped elements using CSS -->
+     
+    </body>      
+
+</html>
